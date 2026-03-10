@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+input {
+  padding: 10px;
+  background-color: rgba(199, 198, 198, 0.562);
+}
+select {
+  padding: 10px;
+  background-color: rgba(199, 198, 198, 0.562);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  font-weight: 500;
+}
+.sidebar {
+  /* border-right-width: 1px;
+            border-right-color: black;
+            border-right-style: solid; */
+  flex: 1;
+  height: 135vh;
+  border-right: 1px solid black;
+  font-weight: lighter;
+}
+.content {
+  flex: 3;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  height: fit-content;
+}
+.input-container {
+  display: flex;
+  column-gap: 10px;
+}
+.customer-section {
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#cancel {
+  background-color: aliceblue;
+  color: blue;
+  font-size: large;
+  text-align: left;
+  margin-left: 100px;
+  padding: 5px 30px;
+}
+#submit {
+  color: white;
+  background-color: blue;
+  margin-left: 400px;
+  padding: 5px 30px;
+  font-size: large;
+}
