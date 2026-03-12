@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplier Registration Form</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Registration Form</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-<body> 
- <h1 style="text-align: center;border: 1px solid black;">Supplier Registration Form</h1>
+
+<body style="border: 1px solid black; margin: 5%;">
+  <h1 style="text-align: center;border: 1px solid black;">Supplier Registration Form</h1>
   <div class="container">
     <div class="sidebar">
-    <h3>general Information</h3>
-    <div class="input-section">
+      <div style="border: 1px solid black;">
+        <h2>Dashboard</h2>
+        <div><a href="../../index.html">Sales Management</a></div>
+        <div><a href="./index2.html">Supplier Management</a></div>
+      </div>
+    </div>
+    <div style="border: 1px solid black; width: 35%;">
+      <div class="input-section">
+        <h3>general Information</h3>
         <label for="SupplierName">Supplier Name</label>
         <input type="text">
         <label fpr="SupplierNumber">Supplier No</label>
@@ -24,83 +33,110 @@
         <input type="text">
         <label for="Country">Country</label>
         <input type="text">
-    </div>
-    </div>
-     <div class="content">
-        <form>
-    <section>
-        <h3>Payment Information</h3>
-        <div class="input-container">
-        <div class="input-section">
-        <label for="TaxID">Tax ID</label>
-        <input type="text">
-        <label for="BankName">Bank Name</label>
-        <input type="text">
-        <label for="AccountNumber">Account Number</label>
-        <input type="number">
         </div>
-        </div>
-      </section> 
-       <section>
-        <div class="input-container">
+      </div>
+    <div class="content">
+      <form>
+        <section>
+          <h3>Payment Information</h3>
+          <div class="input-container">
             <div class="input-section">
-        <label for="PaymentTerms">Payment Term</label>
-        <input type="text">
-        <br>
-        <select>
-        <option value="Payment Terms">Payment Term</option>
-        <option value="1">15 days</option>
-        <option value="2">30 days</option>
-        <option value="3">Others</option>
-    </select>
-    <br>
-<select>
-        <hr>
-        <label for="Payment Method"></label> 
-        <option value="Pyment Method">Payment Method</option>
-        <option value="1">TT</option>
-        <option value="2">Cheque</option>
-        <option value="3">Others</option>
-      </select>  
-     </div>
+              <label for="TaxID">Tax ID</label>
+              <input type="text">
+              <label for="BankName">Bank Name</label>
+              <input type="text">
+              <label for="AccountNumber">Account Number</label>
+              <input type="number">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="input-container">
+            <div class="input-section">
+              <div>
+                <br>
+                <label for="Payment Method"> Payment Terms</label>
+                <input type="hidden"><br>
+                <label for="15days">15 days</label>
+                <input type="checkbox">
+                <label for="30days">30 days</label>
+                <label for="Others">Others</label>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div>
+                <hr>
+                <label for="Payment Method">Payment method</label>
+                <input type="hidden"><br>
+                <label for="Momo">Momo</label>
+                <input type="checkbox"><br>
+                <label for="Cheque">Cheque</label>
+                <input type="checkbox"><br>
+                <label for="Others">Others</label>
+                <input type="checkbox">
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
-    </section>
-</div>
-</form>
-</div>
-</div>
-<br>
-<h2 style="text-align: center;">Address</h2>
-<form class="row g-3" style="border: 1px solid black;">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  <br><hr>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Your Address">
+    </form>
   </div>
-  <br><hr>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Your second Address">
   </div>
-  <br><hr>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <br><hr>
-  <div class="col-md-4"> 
-    <label for="inputState" class="form-label">State</label>
+  <h2 style="text-align: center;">Bussiness Details</h2>
+   <div class="content-container">
+  <div style="margin: 20px;">
+    <label for="nature of Business">Nature of Business</label>
+    <select>
+       <option value="1">Select Business</option>
+      <option value="2">Wholesale</option>
+      <option value="2">Retail</option>
+      <option value="3">Trader</option>
+      <option value="4">Other</option>
+    </select>
+    </div> 
+    <div style="margin:20px;" >
+     <label for="ProductSupplied">Products Supplied</label>
+    <input type="text">
+    </div>
+     <div style="margin:20px;" >
+    <label for="Supply Quantity">Supply Quantity</label>
     <input type="text">
   </div>
-  <br><hr>
- <div><a href="../../index.html">Sales Management</a></div><hr>
- <div><a href="./index2.html">Supplier Management</a></div><hr>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary" style="background-color: rgb(122, 122, 220); padding: 5px 10px;">Submit</button>
   </div>
-</form>
+  <br>
+  <h2 style="text-align: center;">Address</h2>
+  <hr>
+  <div style="border: 1px solid black; display: flex; flex-direction: row; justify-content: space-around;">
+    <div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="Email">Email</label>
+        <input type="text">
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <label for="Address"> Physical Address</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="City">City</label>
+        <input type="text">
+      </div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="City">State</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div>
+    </form>
+    <br>
+    <div>
+      <button type="button" id="cancel">Cancel</button>
+      <button type="submit" id="submit">Submit</button>
+    </div>
 </body>
+
 </html>

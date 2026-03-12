@@ -26,9 +26,10 @@ select {
             border-right-color: black;
             border-right-style: solid; */
   flex: 1;
-  height: 135vh;
+  height: 133vh;
   border-right: 1px solid black;
   font-weight: lighter;
+  border: 1px solid black;
 }
 .content {
   flex: 3;
@@ -57,12 +58,19 @@ select {
   font-size: large;
   text-align: left;
   margin-left: 100px;
-  padding: 5px 30px;
-}
+  padding: 5px 30px;}
 #submit {
   color: white;
   background-color: blue;
   margin-left: 400px;
   padding: 5px 30px;
   font-size: large;
+}
+button{
+  border-radius: 10px;
+}
+button:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+ color: blueviolet;
 }
