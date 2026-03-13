@@ -58,7 +58,8 @@ select {
   font-size: large;
   text-align: left;
   margin-left: 100px;
-  padding: 5px 30px;}
+  padding: 5px 30px;
+}
 #submit {
   color: white;
   background-color: blue;
@@ -66,11 +67,11 @@ select {
   padding: 5px 30px;
   font-size: large;
 }
-button{
+button {
   border-radius: 10px;
 }
-button:hover{
+button:hover {
   transform: scale(1.1);
   transition-duration: 1s;
- color: blueviolet;
+  color: blueviolet;
 }
